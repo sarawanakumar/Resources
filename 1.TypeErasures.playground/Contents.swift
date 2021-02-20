@@ -58,10 +58,10 @@ struct Suv: Vehicle, Equatable {
 
 }
 
-let hundaiI20 = Hatchback(model: "Hundai", brand: "i20")
-let marutiBaleno = Hatchback(model: "Maruti", brand: "baleno")
-let anotherHundaiI20 = Hatchback(model: "Hundai", brand: "i20")
-let anSuv = Suv(model: "Maruti", brand: "baleno")
+let hundaiI20: Vehicle = Hatchback(model: "Hundai", brand: "i20")
+let marutiBaleno: Vehicle = Hatchback(model: "Maruti", brand: "baleno")
+let anotherHundaiI20: Vehicle = Hatchback(model: "Hundai", brand: "i20")
+let anSuv: Vehicle = Suv(model: "Maruti", brand: "baleno")
 
 print(hundaiI20.asEquatable() == anotherHundaiI20.asEquatable())
 print(hundaiI20.asEquatable() == marutiBaleno.asEquatable())
